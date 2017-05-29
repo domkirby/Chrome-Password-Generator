@@ -23,6 +23,9 @@ $(document).ready(function() {
       alert('Too Short!\nMinimum length is 8.');
       return false;
     }
+    if (length > 150) {
+      alert('Too Long!\nMax length is 150 to prevent crashing.')
+    }
     var thepass = generateNonPronPassword(length);
     $("#password").html(thepass);
     $("#password").show();
