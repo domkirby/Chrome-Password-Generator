@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+  <title>Password Generator</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<style>
+.fourhundred {
+  min-width: 400px
+}
+.widthInput {
+  width: 60px;
+}
+#password {
+  font-family: "courier new";
+}
+</style>
+</head>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container fourhundred">
+      <a class="navbar-brand">Password Generator</a>
+    </div>
+  </nav>
+<div class="container fourhundred">
+    <p align="center"><button id="newPass" class="btn btn-success">DinoPass (Pronounceable) Password</button></p>
+    <br />
+    <div id="form-group" align="center">
+      <label>Length</label>
+      <input class="form-control widthInput" id="length" type="text" value="16">
+    </div><br />
+    <p align="center"><button id="newStrong" class="btn btn-success">Generic (Non Pronounceable) Password</button></p>
+    <p class="alert alert-success large" id="password"></p>
+    <p id="copied"></p>
+</div>
+
+  <script src="jquery.min.js"></script>
+  <script src="generate.js"></script>
+
+</body>
+</htmL>
